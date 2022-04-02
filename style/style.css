@@ -1,0 +1,12 @@
+.navbar-toggler:active{
+    border: 0px;
+}
+.carousel-item-1{
+    background-image: url('/pictures/pics/base.svg')!important;
+    width: 100%;
+}
+.carousel-item img{
+    height: 250px;
+    width: 100vw;
+
+}
