@@ -27,10 +27,6 @@
     rgba(255, 255, 255, 0) 41.19%
   );
 }
-/* .pic {
-  max-width: 1440px;
-  margin: auto;
-} */
 .sub-container {
   display: block;
   padding: 20px;
@@ -43,30 +39,6 @@
   height: 260px;
   background-image: url("/pictures/pics/base.feature.png");
   /* margin: 10px; */
-}
-@media (min-width: 768px) {
-  .sub-container {
-    display: block;
-    padding: 20px;
-    flex-wrap: wrap;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-    border-radius: 30px;
-    border-radius: 30px;
-    height: 260px;
-
-    /* background-image: url("/pictures/pics/base.feature.png"); */
-    /* margin: 10px; */
-  }
-  .cont {
-    background: linear-gradient(none);
-  }
-}
-@media (min-width: 768px) {
-  .sub-container {
-    height: 180px !important;
-  }
 }
 .sub-container img {
   margin: 15px 15px;
@@ -91,7 +63,6 @@
   font-size: 18px;
   line-height: 27px;
 }
-
 .img-feature {
   width: 60px;
   height: 60px;
@@ -118,13 +89,7 @@
   margin: auto;
   /* margin: 10px; */
 }
-#header {
-  max-width: 1440px;
-  margin: auto;
-}
 .sales-title {
-  /* display: flex; */
-  /* justify-content: space-between; */
   margin: 0px 50px;
 }
 .sales span {
@@ -160,30 +125,10 @@
   font-weight: 600;
   font-size: 14px;
 }
-
 .see-all div {
   background-image: url("/pictures/logos/chevron\ left.svg");
   width: 10px;
   height: 20px;
-}
-.collapse {
-  flex-grow: 0 !important;
-}
-#search {
-  box-sizing: border-box;
-  position: relative;
-  border-radius: 10px;
-  /* width: 235px; */
-  height: 32px;
-  border: 1px solid #f17228;
-  background-image: url("/pictures/logos/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 10px;
-  align-items: center;
-}
-#search::placeholder {
-  padding-left: 30px;
 }
 .pic-1 img {
   position: relative;
@@ -192,29 +137,22 @@
   left: 10%;
   z-index: 1;
 }
-.pic-2 img {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  left: -10%;
-  top: 30px;
-}
+
 .slider-text h2 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
+  align-items: center;
+  text-align: right;
   line-height: 120%;
+
   color: #f17228;
-  /* padding-bottom: 20px; */
 }
 .slider-text {
   justify-content: center !important;
   align-items: center !important;
-  /* height: 60px; */
-  /* right: 50%; */
   top: 10% !important;
-  /* line-height: 10px; */
 }
 .container {
   max-width: 1440px;
@@ -225,7 +163,7 @@
   display: block;
   padding-bottom: 20px;
 }
-.slider p {
+.slider-text p {
   font-family: "Comfortaa";
   font-style: normal;
   font-weight: 700;
@@ -235,4 +173,73 @@
   align-items: center;
   text-align: right;
   letter-spacing: 0.01em;
+}
+@media (min-width: 768px) {
+  .sub-container {
+    display: block;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    border-radius: 30px;
+    height: 260px;
+  }
+  .cont {
+    background: linear-gradient(none);
+  }
+  .carousel-inner{
+    height: 380px;
+  }
+  .carousel-inner .image #image {
+    background-image: url("/pictures/pics/base.svg") !important;
+    width: 100% !important;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .carousel-inner .image1 #image {
+    background-image: url("/pictures/pics/banner2.png") !important;
+    width: 100% !important;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .carousel-inner .image2 #image {
+    background-image: url("/pictures/pics/banner3.png") !important;
+    width: 100% !important;
+    height: 380px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .sub-container {
+    height: 180px !important;
+  }
+  .pic-1 img {
+    position: relative;
+    width: 400px;
+    height: 200x;
+    left: 5%;
+  }
+  .slider-text h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    color: #f17228;
+    text-align: right;
+  }
+  .slider-text p {
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.01em;
+  }
 }
