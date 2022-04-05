@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.container-footer {
+  background-image: url("/pictures/pics/basefooter.svg");
+}
+.footer-sub {
+  margin: auto;
+  max-width: 1440px;
+  height: 394px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-bottom: 180px;
+}
+.footer-menu {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.contact {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.contact p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+}
+#container-logo {
+  display: flex;
+  text-align: right;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+}
+#logo-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+#food-delivery {
+  display: flex;
+  position: relative;
+  color: #fdfdfd;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+}
+.line19 {
+  width: 1440px;
+  height: 0px;
+  /* justify-content: center; */
+}
+.line19 hr {
+  /* justify-content: center; */
+}
+.social-cont p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+.social-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.social-cont div {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 0px 20px;
+  padding-top: 10px;
+}
+#social {
+  /* padding: 0px 30px; */
+}
+#social div {
+  padding: 0px 30px;
+  justify-content: space-between;
+}
