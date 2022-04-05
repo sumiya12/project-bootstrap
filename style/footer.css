@@ -5,13 +5,13 @@
 .footer-sub {
   margin: auto;
   max-width: 1440px;
-  height: 394px;
+  height: 511px;
 }
 .footer {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  margin-bottom: 180px;
+  margin-bottom: 100px;
 }
 .footer-menu {
   font-family: "Poppins";
@@ -67,12 +67,16 @@
   padding: 10px 0px;
 }
 .line19 {
-  width: 1440px;
-  height: 0px;
+  width: 400px;
+  height: 1px;
+  /* align-items: center; */
   /* justify-content: center; */
 }
 .line19 hr {
   /* justify-content: center; */
+  opacity: 1;
+  color: white;
+  /* border: 1px solid white; */
 }
 .social-cont p {
   font-family: "Poppins";
