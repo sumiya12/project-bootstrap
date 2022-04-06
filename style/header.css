@@ -1,24 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
 #header {
-    max-width: 1440px;
-    margin: auto;
-  }
+  max-width: 1440px;
+  margin: auto;
+}
 #search {
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 10px;
-    /* width: 235px; */
-    height: 32px;
-    border: 1px solid #f17228;
-    background-image: url("/pictures/logos/search.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: 10px;
-    align-items: center;
-  }
-  #search::placeholder {
-    padding-left: 30px;
-  }
-  .collapse {
-    flex-grow: 0 !important;
-  }
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 10px;
+  /* width: 235px; */
+  height: 32px;
+  border: 1px solid #f17228;
+  background-image: url("/pictures/logos/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 10px;
+  align-items: center;
+}
+#search::placeholder {
+  padding-left: 30px;
+}
+.collapse {
+  flex-grow: 0 !important;
+}
+.container a {
+  text-decoration: none;
+  color: black;
+}
+.container a:hover {
+  text-decoration: none;
+  color: black;
+}
+.logos button div {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Poppins", "sans-serif";
+  font-weight: 500px;
+  color: #f17228;
+}
+.logos a div {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Poppins", "sans-serif";
+  font-weight: 500px;
+  color: #f17228;
+}
+.btn1 {
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+}
+.logos button {
+  background-color: none !important;
+}

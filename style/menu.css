@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+#register {
+  width: 181px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #fbc5a6;
+  color: #171717;
+  /* font-family: "Poppins" !important; */
+  font-style: normal !important;
+  font-weight: 700;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: ;
+  /* color: #f17228; */
+}
+#register:hover {
+  width: 181px;
+  height: 40px;
+  background: #f17228;
+  border: 1px solid #f17228;
+  color: #ffffff;
+  /* font-family: "Poppins" !important; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  /* color: #f17228; */
+}

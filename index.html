@@ -25,8 +25,11 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="container d-flex justify-content-between col-12" id="header">
-      <nav class="navbar navbar-expand-md col-9">
+    <div
+      class="container d-flex justify-content-between col-12 px-md-5"
+      id="header"
+    >
+      <nav class="navbar navbar-expand-md col-8">
         <div class="container d-flex justify-content-around">
           <button
             class="ms-3 border-0 d-md-none bg-white"
@@ -65,8 +68,8 @@
           </div>
         </div>
       </nav>
-      <div class="logos col-2 my-3 me-5">
-        <span class="d-flex">
+      <div class="logos col-4 me-5">
+        <span class="d-flex py-2">
           <input
             type="search"
             id="search"
@@ -77,14 +80,50 @@
           <img
             src="/pictures/logos/search icon.svg"
             alt=""
-            class="px-2 d-lg-none"
-          />
-          <img
-            src="/pictures/logos/busket icon.svg"
-            alt=""
-            class="d-none d-md-flex px-2"
-          />
-          <img src="/pictures/logos/user icon.svg" alt="" class="pes-2" />
+            class="py-0 d-lg-none"
+          /><button
+            class="btn1"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <div class="d-flex">
+              <img
+                src="/pictures/logos/busket icon.svg"
+                alt=""
+                class="d-none d-md-flex"
+              />
+              <div class="d-none d-lg-flex ps-2">Сагс</div>
+            </div>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">...</div>
+          </div>
+
+          <a href="/pages/login.html" class="d-flex py-2"
+            ><img
+              src="/pictures/logos/user icon.svg"
+              alt=""
+              class="ps-md-3 ps-3"
+            />
+            <div class="d-none d-lg-flex ps-1">Нэвтрэх</div></a
+          >
         </span>
       </div>
     </div>
@@ -230,7 +269,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -254,7 +293,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -278,7 +317,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -302,7 +341,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -344,7 +383,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -368,7 +407,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -392,7 +431,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -416,7 +455,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -458,7 +497,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -482,7 +521,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -506,7 +545,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -530,7 +569,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -572,7 +611,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -596,7 +635,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -620,7 +659,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
@@ -644,7 +683,7 @@
           <div class="inner">
             <div class="card mx-2 border-0">
               <div class="card-hover m-2">
-                <img src="/pictures/pics/Frame 440.svg" alt="" class=""/>
+                <img src="/pictures/pics/Frame 440.svg" alt="" class="" />
               </div>
               <div class="card-sale">
                 <img
