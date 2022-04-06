@@ -16,6 +16,14 @@
   background-position: 10px;
   align-items: center;
 }
+.food {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f17228;
+}
 #search::placeholder {
   padding-left: 30px;
 }
