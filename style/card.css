@@ -76,3 +76,7 @@
   transition: opacity 1s;
   border-radius: 0.25rem;
 }
+.modal-content{
+  width: 700px !important;
+  height: 901px !important;
+}
