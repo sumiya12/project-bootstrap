@@ -4,19 +4,12 @@ body{
     padding: 0;
 }
 .container{
-    max-width: 1440px;
+    max-width: 996px;
     margin: auto;
 }
 .card-body{
     position: relative;
 }
-.card span{
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: white;
-    z-index: 1;
-    background-color: #f17228;
-    background-size: 50px 100px;
+.modal-body{
+    display: flex;
 }
-

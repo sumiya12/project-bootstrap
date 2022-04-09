@@ -10,6 +10,7 @@ body{
 .container:last-child {
   padding-right: 0;
 }
+
 .main-pr {
   font-family: "Poppins";
   font-style: normal;
@@ -25,9 +26,9 @@ body{
   border-radius: 20px !important;
   overflow: hidden;
 }
-.card img {
+/* .card img {
   border-radius: 20px;
-}
+} */
 .card span{
   position: absolute;
   top: 0;
@@ -73,13 +74,19 @@ body{
   justify-content: center;
 }
 .container {
-  max-width: 620px;
+  max-width: 996px;
   margin: auto;
   box-sizing: border-box;
 }
-.modal-content {
-  width: 700px !important;
-  height: 901px !important;
+.modal-body {
+  /* width: 996px !important; */
+  /* height: 572px !important; */
+}
+.describe-food{
+  /* width: 553px; */
+  position: relative;
+  width: 100%;
+  justify-content: space-around;
 }
 .name {
   font-family: "Poppins";
@@ -125,13 +132,13 @@ body{
 .portion1 {
   background: #f17228;
   border-radius: 10px;
-  width: 300px;
-  height: 40px;
+  /* width: 300px; */
+  /* height: 40px; */
   border: none;
 }
 .portion2 {
-  width: 300px;
-  height: 40px;
+  /* width: 300px; */
+  /* height: 40px; */
   background: #ffffff;
   border: 1px solid #fbc5a6;
   box-sizing: border-box;
@@ -152,17 +159,17 @@ body{
   color: #000000;
 }
 .qnt1 .button {
-  width: 65px;
-  height: 40px;
+  /* width: 65px; */
+  /* height: 40px; */
   border: none;
   background: #f17228;
   border-radius: 10px;
 }
 .qnt1 .button2 {
-  width: 65px;
-  height: 40px;
-  left: 555px;
-  top: 0px;
+  /* width: 65px; */
+  /* height: 40px; */
+  /* left: 555px; */
+  /* top: 0px; */
   border: none;
   background: #f17228;
   border-radius: 10px;
@@ -170,15 +177,15 @@ body{
 .qnt1 .text1 {
   border: none;
   text-align: center;
-  width: 450px;
-  height: 40px;
-  left: 85px;
+  /* width: 450px; */
+  /* height: 40px; */
+  /* left: 85px; */
   background: #fff1e9;
   border-radius: 10px;
 }
 .busket2 {
-  width: 620px;
-  height: 48px;
+  /* width: 620px; */
+  /* height: 48px; */
   border: none;
   background: #f17228;
 }
