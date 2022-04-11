@@ -3,6 +3,7 @@
   max-width: 1440px;
   margin: auto;
 }
+
 #search {
   box-sizing: border-box;
   position: relative;
@@ -61,4 +62,39 @@
 }
 .logos button {
   background-color: none !important;
+}
+.qnt .text1 {
+  border: none;
+  flex-grow: 1 !important;
+  text-align: center;
+  background: #fff1e9;
+  border-radius: 10px;
+}
+.qnt .button {
+  border: none;
+  /* width: 100%; */
+  flex-grow: 1;
+  color: #ffffff;
+  height: 40px;
+  background: #f17228;
+  border-radius: 10px;
+}
+.canvas-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}.offprice {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+  color: #f17228;
+}
+#offcanvasRightLabel{
+  color: #B6B4B4;
 }
