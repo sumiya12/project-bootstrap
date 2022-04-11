@@ -2,13 +2,18 @@
 * {
   box-sizing: border-box;
 }
+main {
+  min-height: calc(100vh -400px);
+  margin: auto;
+}
+
 .container-footer {
   background-image: url("/pictures/pics/basefooter.svg");
 }
 .footer-sub {
   margin: auto;
   max-width: 1440px;
-  height: 511px;
+
   /* padding-right: 30px; */
 }
 .footer {

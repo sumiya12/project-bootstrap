@@ -4,13 +4,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .container:first-child {
   padding-left: 0;
 }
 .container:last-child {
   padding-right: 0;
 }
-
 .main-pr {
   font-family: "Poppins";
   font-style: normal;
@@ -19,16 +19,12 @@ body {
   line-height: 27px;
   text-decoration-line: line-through;
   color: #171717;
-  margin-left: 10px;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px !important;
   overflow: hidden;
 }
-/* .card img {
-  border-radius: 20px;
-} */
 .card span {
   position: absolute;
   top: 0;
@@ -38,12 +34,8 @@ body {
   background: #f17228;
   font-size: 600;
   color: #ffffff;
-  width: 80px;
-  height: 40px;
-  text-align: center;
-  align-items: center;
   border-bottom-left-radius: 20px;
-  padding: 5px;
+  padding: 10px 20px;
 }
 .col {
   position: relative;
@@ -56,20 +48,16 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #00000080;
-  border-radius: 20px;
   opacity: 0;
   z-index: 2;
 }
 .card-hover img {
-  width: 100px;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .card-hover:hover {
   opacity: 1;
   transition: opacity 1s;
-  border-radius: 20px;
   display: flex;
   justify-content: center;
 }
@@ -80,7 +68,6 @@ body {
 }
 .btn-cl {
   align-self: flex-end;
-
 }
 .describe-food {
   position: relative;
@@ -167,7 +154,7 @@ body {
 }
 .submit button {
   border: none;
-  width:100%;
+  width: 100%;
   height: 48px;
   color: #ffffff;
   background: #f17228;
