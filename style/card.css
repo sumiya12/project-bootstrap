@@ -52,8 +52,8 @@ body {
   z-index: 2;
 }
 .card-hover img {
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
 }
 .card-hover:hover {
   opacity: 1;
@@ -64,7 +64,7 @@ body {
 .modal-dialog {
   max-width: 996px !important;
   margin: auto;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 .btn-cl {
   align-self: flex-end;
@@ -118,23 +118,19 @@ body {
   line-height: 24px;
   color: #000000;
 }
-.portion1 {
-  background: #f17228;
-  border-radius: 10px;
-  border: none;
-}
-.portion2 {
+.portion {
   background: #ffffff;
-  border: 1px solid #fbc5a6;
-  box-sizing: border-box;
+  border: 1px solid #f17228;
   border-radius: 10px;
+  flex-grow: 1;
+  height: 40px;
 }
-.portion1::placeholder {
+
+.portion:focus {
   color: #ffffff;
+  background-color: #f17228;
 }
-.portion2::placeholder {
-  color: #f17228;
-}
+
 .title {
   font-family: "Poppins";
   font-style: normal;
@@ -145,7 +141,6 @@ body {
 }
 .qnt1 .button {
   border: none;
-  width: 100%;
   flex-grow: 1;
   color: #ffffff;
   height: 40px;
@@ -154,7 +149,6 @@ body {
 }
 .submit button {
   border: none;
-  width: 100%;
   height: 48px;
   color: #ffffff;
   background: #f17228;
@@ -172,10 +166,15 @@ body {
   border: none;
   background: #f17228;
 }
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .modal-dialog {
     max-width: 700px !important;
     margin: auto;
     box-sizing: border-box;
+  }
+  .describe-food {
+    position: relative;
+    width: 618px;
+    justify-content: center;
   }
 }
