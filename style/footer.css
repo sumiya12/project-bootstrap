@@ -95,6 +95,9 @@
     height: 1px;
   }
   .contact {
-    text-decoration-line: underline;
+    text-decoration-line: underline !important;
+  }
+  .footer-menu {
+    text-decoration-line: underline !important;
   }
 }
