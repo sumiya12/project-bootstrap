@@ -1,20 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-main {
-  min-height: calc(100vh -400px);
-  margin: 0 auto;
-}
-
 .container-footer {
   background-image: url("/pictures/pics/basefooter.svg");
 }
 .footer-sub {
   margin: auto;
   max-width: 1440px;
-
-  /* padding-right: 30px; */
 }
 .footer {
   display: flex;
@@ -51,12 +46,8 @@ main {
 #container-logo {
   display: flex;
   align-items: flex-start;
-  padding: 0px;
 }
-#logo-icon {
-  padding-right: 10px;
-  border-radius: 10px;
-}
+
 #food-delivery {
   position: relative;
   color: #fdfdfd;
@@ -84,10 +75,6 @@ main {
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
-  padding: 10px 20px;
-}
-.social-cont {
-  display: flex;
 }
 .social-cont div {
   font-family: "Poppins";
@@ -96,18 +83,18 @@ main {
   font-size: 12px;
   line-height: 16px;
   color: #ffffff;
-  padding: 0px 20px;
-  padding-top: 10px;
-}
-#social {
-}
-#social div {
-  padding: 0px 30px;
 }
 @media screen and (min-width: 768px) {
   .footer-sub {
     margin: auto;
     max-width: 1440px;
     height: 384px;
+  }
+  .line19 {
+    width: 1300px;
+    height: 1px;
+  }
+  .contact {
+    text-decoration-line: underline;
   }
 }
