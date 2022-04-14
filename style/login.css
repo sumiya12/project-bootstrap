@@ -5,9 +5,13 @@
 .container-sale {
   max-width: 335px;
   margin: auto;
+  /* max-height: 784px; */
+}
+body {
+  min-height: 100vh;
 }
 main {
-  min-height: calc(100%- 529px) !important;
+  min-height: calc(100vh - 435px);
   margin: auto;
 }
 .sales {
