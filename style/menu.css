@@ -4,9 +4,12 @@
   max-width: 100%;
   margin: auto;
 }
+body {
+  min-height: 100vh;
+}
 main {
   margin: auto;
-  max-height: 100vh;
+  min-height: calc(100vh - (435px));
 }
 #register {
   width: 207px;
