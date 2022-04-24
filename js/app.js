@@ -1,7 +1,7 @@
 const cardObj = [
   {
     title: "Зайрмаг",
-    image: "pictures/pics/icecream.svg",
+    image: "/pictures/pics/icecream.svg",
     price: "6,800₮",
     discount: "4,760₮",
     category: "Хямдралтай",
@@ -134,11 +134,6 @@ for (let i = 0; i < seeall.length; i++) {
 </div>`;
 }
 const cardHtml = document.querySelectorAll(".card");
-
-// const result = cardObj.filter(isdiscount => isdiscount.discount != '')
-// for (let e of result) {
-//  const isthis = e.discount
-// }
 for (let i = 0; i < cardHtml.length; i++) {
   cardHtml[i].innerHTML += `
   <img
@@ -146,7 +141,7 @@ for (let i = 0; i < cardHtml.length; i++) {
     alt="Avatar"
     style="width: 100%" class="p-3"
   />
-  <span>20%</span>
+  <span class='salespan'>20%</span>
   <div class="container">
     <h4><b>${cardObj[i].title}</b></h4>
     <div class="price d-flex ms-1">
@@ -240,3 +235,19 @@ for (let i = 0; i < cardHtml.length; i++) {
   </div>
 `;
 }
+const remSpan = document.querySelectorAll('.salespan') 
+const mainPr = document.querySelectorAll('.main-pr')
+const func = (e) => {
+x = cardObj
+  for(i=0; i<e.length; i++){
+    if(x[i].discount !== ''){
+      mainPr[i].className = 'main-pr'
+      remSpan[i].innerText ='20%';
+    }else{
+      mainPr[i].className = 'price'
+      remSpan[i].parentNode.removeChild(remSpan[i]);
+    }}
+}
+func(mainPr);
+func(remSpan);
+
