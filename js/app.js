@@ -112,7 +112,7 @@ const cardObj = [
     category: "Амттан",
   },
 ];
-let title = [
+const title = [
   { title: "Хямдралтай", seeAll: "Бүгдийг харах" },
   { title: "Үндсэн хоол", seeAll: "Бүгдийг харах" },
   { title: "Салад ба зууш", seeAll: "Бүгдийг харах" },
@@ -134,12 +134,17 @@ for (let i = 0; i < seeall.length; i++) {
 </div>`;
 }
 const cardHtml = document.querySelectorAll(".card");
+
+// const result = cardObj.filter(isdiscount => isdiscount.discount != '')
+// for (let e of result) {
+//  const isthis = e.discount
+// }
 for (let i = 0; i < cardHtml.length; i++) {
   cardHtml[i].innerHTML += `
   <img
     src="${cardObj[i].image}"
     alt="Avatar"
-    style="width: 100%"
+    style="width: 100%" class="p-3"
   />
   <span>20%</span>
   <div class="container">
@@ -160,100 +165,78 @@ for (let i = 0; i < cardHtml.length; i++) {
     </button>
   </div>
   <!-- The Modal -->
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="btn-cl me-2 mt-2">
-          <button
-            type="button"
-            class="btn-close flex-end"
-            data-bs-dismiss="modal"
-          ></button>
+  <div class="modal" id="myModal"><div class="modal-dialog">
+  <div class="modal-content">
+    <div class="btn-cl me-2 mt-2">
+      <button
+        type="button"
+        class="btn-close flex-end"
+        data-bs-dismiss="modal"
+      ></button>
+    </div>
+    <!-- Modal body -->
+    <div class="modal-body d-lg-flex d-block">
+      <div>
+        <img src="${cardObj[i].image}" alt="" class="d-none d-lg-flex" />
+        <img src="${cardObj[i].image}" alt="" class="d-flex d-lg-none" />
+      </div>
+      <div class="describe-food m-lg-3">
+        <div class="title d-flex justify-content-between my-3">
+          <div class="name">${cardObj[i].title}</div>
+          <div class="price">${cardObj[i].price}</div>
         </div>
-        <!-- Modal body -->
-        <div class="modal-body d-lg-flex d-block">
-          <div>
-            <img
-              src="/pictures/pics/modal-web.svg"
-              alt=""
-              class="d-none d-lg-flex"
-            />
-            <img
-              src="/pictures/pics/modal-tablet.svg"
-              alt=""
-              class="d-flex d-lg-none"
-            />
-          </div>
-          <div class="describe-food m-lg-3">
-            <div class="title d-flex justify-content-between my-3">
-              <div class="name">Хулууны зутан</div>
-              <div class="price">6,800₮</div>
-            </div>
-            <div class="my-2">
-              <div class="ingredieants">Орц</div>
-              <p class="ingredieants-title">
-                Салмон загас, чинжүү, төмс, лууван , сонгино, цөцгийн
-                тос, самрын үр
-              </p>
-            </div>
-            <div class="qnt">
-              <div class="d-block d-lg-none">
-                <div class="title">Хэмжээ</div>
-                <div class="qnt-unit d-flex justify-content-around">
-                  <div>
-                    <button
-                      class="portion"
-                      type="button"
-                      name="radio"
-                      value="1 хүн"
-                    >
-                      1 хүн
-                    </button>
-                  </div>
-                  <div>
-                    <button
-                      class="portion"
-                      type="button"
-                      name="radio"
-                      value="2 хүн"
-                    >
-                      2 хүн
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="qnt">
-                <div>
-                  <p class="title">Тоо</p>
-                </div>
-                <div
-                  class="qnt1 d-flex my-2 mx-2 justify-content-between"
+        <div class="my-2">
+          <div class="ingredieants">Орц</div>
+          <p class="ingredieants-title">
+            Салмон загас, чинжүү, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+          </p>
+        </div>
+        <div class="qnt">
+          <div class="d-block d-lg-none">
+            <div class="title">Хэмжээ</div>
+            <div class="qnt-unit d-flex justify-content-around">
+              <div>
+                <button
+                  class="portion"
+                  type="button"
+                  name="radio"
+                  value="1 хүн"
                 >
-                  <input
-                    type="button"
-                    value="+"
-                    class="button mx-2"
-                  />
-                  <input type="text" value="1" class="text1 mx-2" />
-                  <input
-                    type="button"
-                    value="-"
-                    class="button mx-2"
-                  />
-                </div>
+                  1 хүн
+                </button>
               </div>
-              <div
-                class="submit d-flex justify-content-around mx-2 mt-5"
-              >
-                <button class="button" type="submit" value="Сагслах">
-                  Сагслах
+              <div>
+                <button
+                  class="portion"
+                  type="button"
+                  name="radio"
+                  value="2 хүн"
+                >
+                  2 хүн
                 </button>
               </div>
             </div>
           </div>
+          <div class="qnt">
+            <div>
+              <p class="title">Тоо</p>
+            </div>
+            <div class="qnt1 d-flex my-2 mx-2 justify-content-between">
+              <input type="button" value="+" class="button mx-2" />
+              <input type="text" value="1" class="text1 mx-2" />
+              <input type="button" value="-" class="button mx-2" />
+            </div>
+          </div>
+          <div class="submit d-flex justify-content-around mx-2 mt-5">
+            <button class="button" type="submit" value="Сагслах">
+              Сагслах
+            </button>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
   </div>
 `;
 }
