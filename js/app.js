@@ -37,6 +37,7 @@ const cardObj = [
     title: "Бөөрөнхий мах",
     image: "/pictures/pics/buurunhii mah.svg",
     price: "14,000₮",
+    discount: "",
     category: "Үндсэн хоол",
   },
   {
