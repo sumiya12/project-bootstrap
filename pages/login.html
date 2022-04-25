@@ -18,85 +18,7 @@
   </head>
   <body>
     <!-- header none -->
-    <div
-      class="container d-flex justify-content-between col-12 px-md-5 d-none d-md-flex"
-      id="header"
-    >
-      <nav class="navbar navbar-expand-md col-8">
-        <div class="container d-flex justify-content-around">
-          <button
-            class="ms-3 border-0 d-md-none bg-white"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="d-md-none"
-              ><img src="/pictures/logos/dropIcon.svg" class="d-md-none" alt=""
-            /></span>
-          </button>
-          <div class="food d-flex justify-content-start">
-            <img src="/pictures/logos/logo.image.svg" alt="" class="" />
-            <p class="m-2">Food delivery</p>
-          </div>
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-dark"
-                  aria-current="page"
-                  href="/index.html"
-                  >Нүүр</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="/pages/menu.html"
-                  >Хоолны цэс</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Хүргэлтын бүс</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="logos col-4 me-5">
-        <span class="d-flex py-2">
-          <input
-            type="search"
-            id="search"
-            name="search"
-            placeholder="Хайх"
-            class="d-none d-lg-flex"
-          />
-          <img
-            src="/pictures/logos/search icon.svg"
-            alt=""
-            class="py-2 d-lg-none"
-          />
-          <a href="" class="d-flex py-2"
-            ><img
-              src="/pictures/logos/busket icon.svg"
-              alt=""
-              class="d-none d-md-flex ps-md-3"
-            />
-            <div class="d-none d-lg-flex ps-1">Сагс</div></a
-          >
-
-          <a href="/pages/login.html" class="d-flex py-2"
-            ><img
-              src="/pictures/logos/user icon.svg"
-              alt=""
-              class="ps-md-3 ps-3"
-            />
-            <div class="d-none d-lg-flex ps-1">Нэвтрэх</div></a
-          >
-        </span>
-      </div>
-    </div>
+    <div id="navbar"></div>
     <!-- login Header active -->
     <div class="d-flex col-12 justify-content-center pb-2 d-md-none">
       <div class="container d-flex">
@@ -207,6 +129,8 @@
         </div>
       </div>
     </div>
+    <script src="/js/ajax.js"></script>
+    <script src="/js/footer.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
