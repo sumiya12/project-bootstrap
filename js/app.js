@@ -1,4 +1,4 @@
-let func = (arr, c) => {
+const func = (arr, c) => {
   let html = document.querySelector(c);
   for (let i = 0; i < arr.length; i++) {
     let foods = `<div class="col">
@@ -47,12 +47,7 @@ let func = (arr, c) => {
     // console.log(html);
   }
 };
-const title = [
-  { title: "Хямдралтай", seeAll: "Бүгдийг харах" },
-  { title: "Үндсэн хоол", seeAll: "Бүгдийг харах" },
-  { title: "Салад ба зууш", seeAll: "Бүгдийг харах" },
-  { title: "Амттан", seeAll: "Бүгдийг харах" },
-];
+
 const xhrFood = new XMLHttpRequest();
 xhrFood.onreadystatechange = function () {
   if (this.readyState === 4 && this.status === 200) {
@@ -61,29 +56,50 @@ xhrFood.onreadystatechange = function () {
     const mainDish = datas.filter((card) => card.category == "Үндсэн хоол");
     const salad = datas.filter((card) => card.category == "Салад ба зууш");
     const dessert = datas.filter((card) => card.category == "Амттан");
+    // func(isdiscount, ".row");
     func(isdiscount, ".row");
-    func(mainDish, ".row");
+    func(mainDish, ".mainDish");
+    func(salad, ".salad1");
+    func(dessert, ".dessert");
   }
 };
 xhrFood.open("GET", "/data.json", true);
 xhrFood.send();
 
-const seeall = document.querySelectorAll(".container-sale");
-for (let i = 0; i < seeall.length; i++) {
-  seeall[
-    i
-  ].innerHTML += `<div class="sales-title d-flex justify-content-between mx-5">
+const sale = new XMLHttpRequest();
+sale.onreadystatechange = function () {
+  if (this.readyState === 4 && this.status === 200) {
+    const datas = JSON.parse(this.responseText);
+    const isdiscount = datas.filter((card) => card.title == "Хямдралтай");
+    const mainDish = datas.filter((card) => card.title == "Үндсэн хоол");
+    const salad = datas.filter((card) => card.title == "Салад ба зууш");
+    const dessert = datas.filter((card) => card.title == "Амттан");
+    title(isdiscount, ".hymdraltai");
+    title(mainDish, ".mainhool");
+    title(salad, ".salad");
+    title(dessert, ".amttan");
+  }
+};
+sale.open("GET", "/sale.json", true);
+sale.send();
+
+const title = (arr, c) => {
+  const seeall = document.querySelector(c);
+  for (let i = 0; i < arr.length; i++) {
+    let tit = `<div class="sales-title d-flex justify-content-between mx-5">
 <div class="sales d-flex">
   <span></span>
-  <h3>${title[i].title}</h3>
+  <h3>${arr[i].title}</h3>
 </div>
 <div class="see-all">
   <div class="d-flex d-md-none"></div>
-  <input type="button" value="${title[i].seeAll}" class="d-none d-md-flex" />
+  <input type="button" value="${arr[i].seeAll}" class="d-none d-md-flex" />
 </div>
 </div>`;
-}
-
+    seeall.innerHTML += tit;
+    // console.log("a");
+  }
+};
 // const cardHtml = document.querySelectorAll(".card");
 // for (let i = 0; i < cardHtml.length; i++) {
 //   cardHtml[i].innerHTML += ;

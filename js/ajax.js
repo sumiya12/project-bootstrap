@@ -1,7 +1,7 @@
-const footer = new XMLHttpRequest();
-footer.onreadystatechange = function () {
+const header = new XMLHttpRequest();
+header.onreadystatechange = function () {
   const navbar = document.querySelector("#navbar");
   navbar.innerHTML = this.responseText;
 };
-xhr.open("GET", "/navbar.html", true);
-xhr.send();
+header.open("GET", "/navbar.html", true);
+header.send();
