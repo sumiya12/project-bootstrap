@@ -1,19 +1,19 @@
 const func = (arr, c) => {
   let html = document.querySelector(c);
-  for (let i = 0; i < arr.length; i++) {
+  arr.map((i) => {
     let foods = `<div class="col">
           <div class="card">
   <img
-    src="${arr[i].image}"
+    src="${i.image}"
     alt="Avatar"
     style="width: 100%" class="p-3"
   />
-  <span class="salespan">${arr[i].isdiscount}%</span>
+  <span class="salespan">${i.isdiscount}%</span>
   <div class="container">
-    <h4><b>${arr[i].title}</b></h4>
+    <h4><b>${i.title}</b></h4>
     <div class="price d-flex ms-1">
-      <p id="sl-pr" class="">${arr[i].price}₮</p>
-      <p class="main-pr ms-2">${arr[i].price}₮</p>
+      <p id="sl-pr" class="">${i.price}₮</p>
+      <p class="main-pr ms-2">${i.price}₮</p>
     </div>
   </div>
   <div class="card-hover">
@@ -36,7 +36,6 @@ const func = (arr, c) => {
         data-bs-dismiss="modal"
       ></button>
     </div>
-    
   </div>
 </div>
   </div>
@@ -44,8 +43,7 @@ const func = (arr, c) => {
   </div>
 `;
     html.innerHTML += foods;
-    // console.log(html);
-  }
+  });
 };
 
 const xhrFood = new XMLHttpRequest();
@@ -56,8 +54,7 @@ xhrFood.onreadystatechange = function () {
     const mainDish = datas.filter((card) => card.category == "Үндсэн хоол");
     const salad = datas.filter((card) => card.category == "Салад ба зууш");
     const dessert = datas.filter((card) => card.category == "Амттан");
-    // func(isdiscount, ".row");
-    func(isdiscount, ".row");
+    func(isdiscount, ".sales");
     func(mainDish, ".mainDish");
     func(salad, ".salad1");
     func(dessert, ".dessert");
@@ -85,38 +82,17 @@ sale.send();
 
 const title = (arr, c) => {
   const seeall = document.querySelector(c);
-  for (let i = 0; i < arr.length; i++) {
+  arr.map((i) => {
     let tit = `<div class="sales-title d-flex justify-content-between mx-5">
 <div class="sales d-flex">
   <span></span>
-  <h3>${arr[i].title}</h3>
+  <h3>${i.title}</h3>
 </div>
 <div class="see-all">
   <div class="d-flex d-md-none"></div>
-  <input type="button" value="${arr[i].seeAll}" class="d-none d-md-flex" />
+  <input type="button" value="${i.seeAll}" class="d-none d-md-flex" />
 </div>
 </div>`;
     seeall.innerHTML += tit;
-    // console.log("a");
-  }
+  });
 };
-// const cardHtml = document.querySelectorAll(".card");
-// for (let i = 0; i < cardHtml.length; i++) {
-//   cardHtml[i].innerHTML += ;
-// }
-// const remSpan = document.querySelectorAll(".salespan");
-// const mainPr = document.querySelectorAll(".main-pr");
-// const func = (e) => {
-//   x = cardObj;
-//   for (i = 0; i < e.length; i++) {
-//     if (x[i].discount !== "") {
-//       mainPr[i].className = "main-pr";
-//       remSpan[i].innerText = "20%";
-//     } else {
-//       mainPr[i].className = "price";
-//       remSpan[i].parentNode.removeChild(remSpan[i]);
-//     }
-//   }
-// };
-// func(mainPr);
-// func(remSpan);
